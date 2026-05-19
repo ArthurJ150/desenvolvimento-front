@@ -1,118 +1,95 @@
-/* RESET */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+ body {
+     font-family: 'Segoe UI', sans-serif;
+     background: #e5e7eb;
+     color: #111;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+ }
 
-/* BASE */
+ header {
+     background: #111827;
+     color: var(--cor-fundo-card);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 12px 30px;
+ }
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #e5e7eb;
-    color: #111;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+ .logoArea {
+     display: flex;
+     align-items: center;
+     gap: 12px;
+ }
 
-/* HEADER */
+ .logoArea img {
+     height: 45px;
+ }
 
-header {
-    background: #111827;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 30px;
-}
+ nav button {
+     padding: 8px 14px;
+     border-radius: 6px;
+     transition: 0.3s;
+     cursor: pointer;
+ }
 
-.logoArea {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
+ nav button:hover {
+     background: #374151;
+ }
 
-.logoArea img {
-    height: 45px;
-}
+ main {
+     flex: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 40px 20px;
+ }
 
-.logoArea h1 {
-    color: white;
-    font-size: 22px;
-}
+ .searchCard {
+     background: white;
+     width: 100%;
+     max-width: 500px;
+     padding: 30px;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+ }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 14px;
-    border-radius: 6px;
-    transition: 0.2s;
-}
+ .searchCard h2 {
+     text-align: center;
+     margin-bottom: 20px;
+     color: #15803d;
+ }
 
-nav a:hover {
-    background: #374151;
-}
+ .selectTema {
+     width: 100%;
+     padding: 12px;
+     border-radius: 8px;
+     border: 1px solid #ccc;
+     font-size: 15px;
+     margin-bottom: 15px;
+ }
 
-/* MAIN */
+ #btBuscar {
+     width: 100%;
+     padding: 12px;
+     border: none;
+     border-radius: 8px;
+     background: #15803d;
+     color: white;
+     font-size: 15px;
+     cursor: pointer;
+     transition: 0.2s;
+ }
 
-main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
-}
-
-/* SEARCH CARD */
-
-.searchCard {
-    background: white;
-    width: 100%;
-    max-width: 500px;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-/* TÍTULO */
-
-.searchCard h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #15803d;
-}
-
-/* SELECT */
-
-.selectTema {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-
-/* BOTÃO */
-
-button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    background: #15803d;
-    color: white;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-
-button:hover {
-    background: #166534;
-}
-
-/* FOOTER */
+ #btBuscar:hover {
+     background: #166534;
+ }
 
 footer {
     background: #111827;
