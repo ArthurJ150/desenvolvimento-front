@@ -9,31 +9,22 @@
 </head>
 
 <body>
-
-    <!-- HEADER -->
-
     <header>
 
         <div class="logoArea">
-            <img src="https://dpna150.github.io/desenvolvimento-front/logoDPNA.png">
-            <h1>ALBINOTICIAS</h1>
+            <img src="/logoDPNA.png">
         </div>
 
         <nav>
             <a href="https://dpna150.github.io/desenvolvimento-front/">Início</a>
-            <a href="pesq.html">Pesquisar</a>
+            <a href="https://dpna150.github.io/desenvolvimento-front/HTML/pesq.html"><img src="/lupa.png" alt="logoPesquisa"></a>
         </nav>
-
     </header>
 
-    <!-- MAIN -->
-
     <main>
-
         <div class="loginCard">
 
             <div class="toggle-container">
-
                 <input type="radio" id="log" name="conta" value="login" checked>
                 <input type="radio" id="cad" name="conta" value="Cadastro">
 
@@ -42,85 +33,58 @@
                     <label for="cad" class="option">Cadastro</label>
                     <span class="slider"></span>
                 </div>
-
             </div>
 
             <h2 id="form-title">Login</h2>
 
-            <!-- LOGIN -->
-
             <form id="login-form">
+                <input type="text" id="login-username" minlength="3" maxlength="10" placeholder="Nome de usuário"
+                    required>
+                <input type="password" id="login-password" minlength="8" maxlength="16" placeholder="Senha" required>
 
-                <input type="text" id="login-username" placeholder="Nome de usuário" required>
-
-                <input type="password" id="login-password" placeholder="Senha" required>
-
-                <button type="submit">
-                    Entrar
-                </button>
-
+                <button type="submit">Entrar</button>
             </form>
-
-            <!-- CADASTRO -->
 
             <form id="signup-form" style="display: none;">
-
-                <input type="text" id="signup-username" placeholder="Nome de usuário" required>
-
+                <input type="text" id="signup-username" minlength="3" maxlength="10" placeholder="Nome de usuário"
+                    required>
                 <input type="email" id="signup-email" placeholder="Email" required>
-
                 <input type="date" id="signup-birthdate" required>
+                <input type="password" id="signup-password" minlength="8" maxlength="10" placeholder="Senha" required>
+                <input type="password" id="signup-confirm-password" minlength="8" maxlength="16"
+                    placeholder="Confirmar Senha" required>
 
-                <input type="tel" id="signup-number" placeholder="Número de telefone" required>
-
-                <input type="password" id="signup-password" placeholder="Senha" required>
-
-                <input type="password" id="signup-confirm-password" placeholder="Confirmar Senha" required>
-
-                <button type="submit">
-                    Continuar
-                </button>
-
+                <button type="submit">Continuar</button>
             </form>
 
-            <!-- ETAPA FINAL -->
-
             <form id="signup-form2" style="display: none;">
-
                 <select id="tema-user" required>
-
-                    <option disabled selected>
-                        Selecione o tema
-                    </option>
-
+                    <option disabled selected>Selecione o tema</option>
                     <option>Futebol Europeu</option>
                     <option>Futebol Inglês</option>
                     <option>Futebol Brasileiro</option>
-
                 </select>
 
-                <button type="submit">
-                    Cadastrar
-                </button>
-
+                <button type="submit">Cadastrar</button>
             </form>
-
         </div>
-
     </main>
 
-    <!-- FOOTER -->
-
     <footer>
+        <strong>
+            <h1>NOSSAS REDES!!!!</h1>
+        </strong>
 
-        <p>
-            &copy; 2026 ALBINOTICIAS — Todos os direitos reservados.
-        </p>
+        <p>Instagram: @Albinoticias</p>
+        <p>Linkedin: Albinoticias</p>
+        <p>Telfone: (27) 9996dura-6mole</p>
 
+        <p>|------------------------------------------------------------|</p>
+        <p>| &copy; 2026 ALBINOTICIAS — Todos os direitos reservados |</p>
+        <p>|------------------------------------------------------------|</p>
     </footer>
+</body>  
 
-    <script src="https://dpna150.github.io/desenvolvimento-front/JS/scriptLogin.js"></script>
-
-</body>
+<script src="https://dpna150.github.io/desenvolvimento-front/JS/scriptLogin.js"></script>
 
 </html>
