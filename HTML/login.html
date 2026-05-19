@@ -13,12 +13,11 @@
 
         <div class="logoArea">
             <img src="/logoDPNA.png">
-            <h1>ALBINOTICIAS</h1>
         </div>
 
         <nav>
             <a href="https://dpna150.github.io/desenvolvimento-front/">Início</a>
-            <a href="https://dpna150.github.io/desenvolvimento-front/HTML/pesq.html">Pesquisar</a>
+            <a href="https://dpna150.github.io/desenvolvimento-front/HTML/pesq.html"><img src="/lupa.png" alt="logoPesquisa"></a>
         </nav>
     </header>
 
@@ -26,7 +25,6 @@
         <div class="loginCard">
 
             <div class="toggle-container">
-
                 <input type="radio" id="log" name="conta" value="login" checked>
                 <input type="radio" id="cad" name="conta" value="Cadastro">
 
@@ -40,24 +38,26 @@
             <h2 id="form-title">Login</h2>
 
             <form id="login-form">
-                <input type="text" id="login-username" placeholder="Nome de usuário" required>
-                <input type="password" id="login-password" placeholder="Senha" required>
+                <input type="text" id="login-username" minlength="3" maxlength="10" placeholder="Nome de usuário"
+                    required>
+                <input type="password" id="login-password" minlength="8" maxlength="16" placeholder="Senha" required>
 
                 <button type="submit">Entrar</button>
             </form>
 
             <form id="signup-form" style="display: none;">
-                <input type="text" id="signup-username" placeholder="Nome de usuário" required>
+                <input type="text" id="signup-username" minlength="3" maxlength="10" placeholder="Nome de usuário"
+                    required>
                 <input type="email" id="signup-email" placeholder="Email" required>
                 <input type="date" id="signup-birthdate" required>
-                <input type="tel" id="signup-number" placeholder="Número de telefone" required>
-                <input type="password" id="signup-password" placeholder="Senha" required>
-                <input type="password" id="signup-confirm-password" placeholder="Confirmar Senha" required>
+                <input type="password" id="signup-password" minlength="8" maxlength="10" placeholder="Senha" required>
+                <input type="password" id="signup-confirm-password" minlength="8" maxlength="16"
+                    placeholder="Confirmar Senha" required>
+
                 <button type="submit">Continuar</button>
             </form>
 
             <form id="signup-form2" style="display: none;">
-
                 <select id="tema-user" required>
                     <option disabled selected>Selecione o tema</option>
                     <option>Futebol Europeu</option>
@@ -71,11 +71,20 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 ALBINOTICIAS — Todos os direitos reservados.</p>
+        <strong>
+            <h1>NOSSAS REDES!!!!</h1>
+        </strong>
+
+        <p>Instagram: @Albinoticias</p>
+        <p>Linkedin: Albinoticias</p>
+        <p>Telfone: (27) 9996dura-6mole</p>
+
+        <p>|------------------------------------------------------------|</p>
+        <p>| &copy; 2026 ALBINOTICIAS — Todos os direitos reservados |</p>
+        <p>|------------------------------------------------------------|</p>
     </footer>
+</body>  
 
-    <script src="https://dpna150.github.io/desenvolvimento-front/JS/scriptLogin.js"></script>
-
-</body>
+<script src="https://dpna150.github.io/desenvolvimento-front/JS/scriptLogin.js"></script>
 
 </html>

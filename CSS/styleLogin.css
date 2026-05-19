@@ -1,12 +1,8 @@
-/* RESET */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* BASE */
 
 body {
     font-family: 'Segoe UI', sans-serif;
@@ -17,10 +13,9 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER */
-
 header {
     background: #111827;
+    color: var(--cor-fundo-card);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -38,23 +33,25 @@ header {
 }
 
 .logoArea h1 {
-    color: white;
     font-size: 22px;
+    letter-spacing: 1px;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
+button {
     padding: 8px 14px;
     border-radius: 6px;
-    transition: 0.2s;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-nav a:hover {
+button:hover {
     background: #374151;
+    color: white;
 }
 
-/* MAIN */
+button img {
+    height: 12px;
+}
 
 main {
     display: flex;
@@ -63,8 +60,6 @@ main {
     padding: 40px 20px;
     flex: 1;
 }
-
-/* CARD LOGIN */
 
 .loginCard {
     background: white;
@@ -75,7 +70,6 @@ main {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* TOGGLE */
 
 .toggle-container {
     position: relative;
@@ -122,15 +116,11 @@ input[type="radio"] {
     left: 50%;
 }
 
-/* TÍTULO */
-
 h2 {
     text-align: center;
     margin-bottom: 15px;
     color: #15803d;
 }
-
-/* INPUTS */
 
 input,
 select {
@@ -142,9 +132,13 @@ select {
     font-size: 14px;
 }
 
-/* BOTÕES */
+input:focus,
+select:focus {
+    outline: 2px solid #15803d;
+    border-color: #15803d;
+}
 
-button {
+main button {
     width: 100%;
     margin-top: 12px;
     padding: 10px;
@@ -157,11 +151,9 @@ button {
     transition: 0.2s;
 }
 
-button:hover {
+main button:hover {
     background: #166534;
 }
-
-/* FOOTER */
 
 footer {
     background: #111827;
