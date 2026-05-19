@@ -1,12 +1,8 @@
-/* RESET */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* BASE */
 
 body {
     font-family: 'Segoe UI', sans-serif;
@@ -17,10 +13,9 @@ body {
     min-height: 100vh;
 }
 
-/* HEADER */
-
 header {
     background: #111827;
+    color: var(--cor-fundo-card);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,44 +32,35 @@ header {
     height: 45px;
 }
 
-.logoArea h1 {
-    color: white;
-    font-size: 22px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
+nav button {
     padding: 8px 14px;
     border-radius: 6px;
-    transition: 0.2s;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-nav a:hover {
+nav button:hover {
     background: #374151;
 }
 
-/* MAIN */
+nav button img {
+    height: 12px;
+}
 
 main {
     flex: 1;
     padding: 40px 20px;
 }
 
-/* PERFIL CARD */
-
 .perfil-container {
-
     background: white;
     width: 100%;
-    max-width: 900px;
+    max-width: 900x;
     margin: auto;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-/* TOPO PERFIL */
 
 .perfil-topo {
     display: flex;
@@ -90,8 +76,6 @@ main {
     border: 4px solid #15803d;
 }
 
-/* INFO PERFIL */
-
 .perfil-info h2 {
     margin-bottom: 5px;
     font-size: 22px;
@@ -102,9 +86,7 @@ main {
     margin-bottom: 10px;
 }
 
-/* BOTÃO */
-
-button {
+main button {
     background: #15803d;
     border: none;
     color: white;
@@ -114,14 +96,11 @@ button {
     transition: 0.2s;
 }
 
-button:hover {
+main button:hover {
     background: #166534;
 }
 
-/* BIO */
-
 .bio {
-
     margin-top: 20px;
     background: #f3f4f6;
     padding: 15px;
@@ -132,8 +111,6 @@ button:hover {
     margin-bottom: 8px;
     color: #15803d;
 }
-
-/* POSTS */
 
 .posts {
     margin-top: 30px;
@@ -155,8 +132,6 @@ button:hover {
 .post:hover {
     background: #e5e7eb;
 }
-
-/* FOOTER */
 
 footer {
     background: #111827;
