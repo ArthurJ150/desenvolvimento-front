@@ -4,38 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscar Sobre</title>
-    <link rel="stylesheet" href="/CSS/stylePesq.css">
+    <title>Pesquisar / ALBINOTICIAS</title>
+    <link rel="stylesheet" href="https://dpna150.github.io/desenvolvimento-front/CSS/stylePesq.css">
 </head>
 
 <body>
     <header>
-        <img src="/logoDPNA.png" alt="Logo">
-        <h1 style="color: white;">
-            ALBINOTICIAS
-        </h1>
+        <div class="logoArea">
+            <img src="/logoDPNA.png">
+            <h1>ALBINOTICIAS</h1>
+        </div>
 
         <nav>
-            <a href="/HTML/perfil.html">Perfil</a>
-            <a href="/HTML/index.html">Início</a>
+            <a href="https://dpna150.github.io/desenvolvimento-front/">Início</a>
+            <a href="https://dpna150.github.io/desenvolvimento-front/HTML/perfil.html">Perfil</a>
         </nav>
     </header>
 
     <main>
-        <select class="selectTema" name="categoria" id="categoria">
-            <option value="" disabled selected>Selecione uma categoria</option>
-            <option value="noticias">Futebol brasileiro</option>
-            <option value="esportes">Futebol europeu</option>
-            <option value="entretenimento">Futebol alternativo</option>
-        </select>
+        <div class="searchCard">
+
+            <h2>Buscar Notícias</h2>
+
+            <select class="selectTema" name="categoria" id="categoria">
+                <option disabled selected>Selecione uma categoria</option>
+                <option value="brasileiro">Futebol brasileiro</option>
+                <option value="europeu">Futebol europeu</option>
+                <option value="alternativo">Futebol alternativo</option>
+            </select>
+
+            <button onclick="buscarCategoria()">Buscar</button>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 ALBINOTICIAS. Todos os direitos reservados.</p>
+        <p>&copy; 2026 ALBINOTICIAS — Todos os direitos reservados.</p>
     </footer>
-
 </body>
 
-<script src="/JS/scriptPesq.js"></script>
+<script src="https://dpna150.github.io/desenvolvimento-front/JS/scriptPesq.js"></script>
 
 </html>

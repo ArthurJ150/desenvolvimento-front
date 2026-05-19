@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
             signupForm.style.display = 'block';
             signupForm2.style.display = 'none';
             formTitle.textContent = 'Cadastro';
-
         }
     }
 
@@ -29,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
     cadastroRadio.addEventListener('change', toggleForm);
 });
 
-// LOGIN
 document.getElementById('login-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -39,10 +37,9 @@ document.getElementById('login-form').addEventListener('submit', function (event
     }
 
     alert("Login realizado!");
-    window.location.href = "index.html";
+    window.location.href = "https://dpna150.github.io/desenvolvimento-front/";
 });
 
-// CADASTRO ETAPA 1
 document.getElementById('signup-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -63,7 +60,6 @@ document.getElementById('signup-form').addEventListener('submit', function (even
     document.getElementById('signup-form2').style.display = 'block';
 });
 
-// CADASTRO FINAL
 document.getElementById('signup-form2').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -73,5 +69,5 @@ document.getElementById('signup-form2').addEventListener('submit', function (eve
     }
 
     alert("Cadastro realizado com sucesso!");
-    window.location.href = "index.html";
+    window.location.href = "https://dpna150.github.io/desenvolvimento-front/";
 });
