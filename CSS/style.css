@@ -62,7 +62,7 @@ nav a img {
 
 .bannerInicio {
     min-height: 280px;
-    background-image: url('/testeBanner.jpg');
+    background-image: url('https://dpna150.github.io/desenvolvimento-front/testeBanner.jpg');
     background-position: center;
     display: flex;
     align-items: flex-end;
