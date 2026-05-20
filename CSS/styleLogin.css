@@ -170,3 +170,7 @@ footer {
     text-align: center;
     padding: 25px;
 }
+
+footer p {
+    color: #111827;
+}
