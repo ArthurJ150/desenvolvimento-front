@@ -173,8 +173,8 @@ footer h1 {
     margin-bottom: 15px;
 }
 
-footer p {
-    color: #111827;
+footer h6 {
+    margin: 15px;
 }
 
 @media (max-width: 1500px) {
@@ -290,7 +290,7 @@ footer p {
         padding: 18px;
     }
 
-    footer p {
+    footer h5, footer h6 {
         font-size: 14px;
     }
 }
