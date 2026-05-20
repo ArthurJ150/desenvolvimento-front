@@ -5,6 +5,7 @@
 
 :root {
     --cor-fundo-card: #ffffff;
+    --cor-fundo-topo-chao: #111827;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 }
 
 header {
-    background: #111827;
+    background: var(--cor-fundo-topo-chao);
     color: var(--cor-fundo-card);
     display: flex;
     align-items: center;
@@ -159,11 +160,11 @@ section {
 
 .btCard:hover {
     background: #374151;
-    color: white;
+    color: var(--cor-fundo-card);
 }
 
 footer {
-    background: #111827;
+    background: var(--cor-fundo-topo-chao);
     color: var(--cor-fundo-card);
     text-align: center;
     padding: 25px;
