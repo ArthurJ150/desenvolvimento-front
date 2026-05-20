@@ -37,20 +37,29 @@ header {
     letter-spacing: 1px;
 }
 
-button {
-    padding: 8px 14px;
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #e5e5e5;
+    color: #000;
+    text-decoration: none;
     border-radius: 6px;
     transition: 0.3s;
-    cursor: pointer;
 }
 
-button:hover {
+nav a:hover {
     background: #374151;
-    color: white;
+    color: var(--cor-fundo-card);
 }
 
-button img {
-    height: 12px;
+nav a img {
+    height: 14px;
 }
 
 main {
