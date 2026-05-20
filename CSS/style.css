@@ -173,6 +173,10 @@ footer h1 {
     margin-bottom: 15px;
 }
 
+footer p {
+    color: #111827;
+}
+
 @media (max-width: 1500px) {
 
     section {
