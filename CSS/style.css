@@ -88,6 +88,19 @@ nav a img {
     font-size: clamp(14px, 2vw, 20px);
 }
 
+.btBanner {
+    padding: 8px 14px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 60px;
+    width: 10%;
+}
+
+.btBanner:hover {
+    background: #374151;
+    color: var(--cor-fundo-card);
+}
+
 section {
     display: grid;
     grid-template-columns: 3fr;
