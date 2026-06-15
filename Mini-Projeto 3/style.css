@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(103, 103, 255);
+    width: 100%;
+}
+
+header,
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 42px;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 19px;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.434);
+    color: black;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 80%;
+}
+
+.Card {
+    background-color: white;
+    border-radius: 10px;
+    width: 40%;
+    margin: 2%;
+    margin-left: 30%;
+}
+
+#cardAdicionar {
+    display: none;
+    margin: 30px auto;
+}
+
+#saidaJson {
+    display: none;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 15px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / ALBINOTICIAS</title>
+    <link rel="stylesheet" href="/CSS/styleLogin.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="/logoDPNA.png" alt="Logo">
+        <h1 style="color: white;">
+            ALBINOTICIAS
+        </h1>
+
+        <nav>
+            <a href="/HTML/index.html">Início</a>
+            <a href="/HTML/pesq.html">Pesquisar</a>
+        </nav>
+    </header>
+
+        <main>
+            <div class="toggle-container">
+
+                <input type="radio" id="log" name="conta" value="login">
+                <input type="radio" id="cad" name="conta" value="Cadastro">
+
+                <div class="toggle">
+                    <label for="log" class="option">Login</label>
+                    <label for="cad" class="option">Cadastro</label>
+                    <span class="slider"></span>
+                </div>
+
+            </div>
+            
+            <strong>
+                <h1 id="form-title">Login</h1>
+            </strong>
+
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="Nome de usuário" required>
+                <input type="password" id="login-password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+
+            <form id="signup-form" style="display: none;">
+                <input type="text" id="signup-username" minlength="3" maxlength="15" placeholder="Nome de usuário"
+                    required>
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <input type="date" id="signup-birthdate" min="1920-01-01" required>
+                <input type="tel" id="signup-number" maxlength="12" placeholder="Número de telefone" required>
+                <input type="password" id="signup-password" minlength="6" maxlength="10" placeholder="Senha" required>
+                <input type="password" id="signup-confirm-password" minlength="6" maxlength="10"
+                    placeholder="Confirmar Senha" required>
+                <button type="submit">Continuar</button>
+            </form>
+
+            <form id="signup-form2" style="display: none;">
+                <select id="tema-user" required>
+                    <option value="" disabled selected>Selecione o tema</option>
+                    <option>Futebol Europeu</option>
+                    <option>Futebol Inglês</option>
+                    <option>Futebol Brasileiro</option>
+                </select>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 ALBINOTICIAS. Todos os direitos reservados.</p>
+        </footer>
+
+    <script src="/JS/scriptLogin.js"></script>
+
+</body>
+
+</html>

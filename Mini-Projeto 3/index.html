@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>NOSSOS PRODUTOS 100% CONFIÁVEIS (Confia)</h1>
+    </header>
+
+    <main>
+        <div id="botoes">
+            <button id="btMostrar">Mostrar Produtos</button>
+            <button id="btAdicionar">Adicionar Produto</button>
+            <button id="btExportar">Exportar JSON</button>
+        </div>
+
+        <div id="cardAdicionar" class="Card">
+            <br>
+
+            <h1>Adicionar Produto</h1>
+            <br><br>
+
+            <input type="text" id="inNome" placeholder="Nome do Produto">
+            <br><br>
+
+            <input type="number" id="inPreco" placeholder="Preço do Produto">
+            <br><br>
+
+            <input type="text" id="inCategoria" placeholder="Categoria do Produto">
+            <br><br>
+
+            <button id="btRegistrar">Registrar Produto</button>
+        </div>
+
+        <div id="tabela"></div>
+        <br><br>
+        <pre id="saidaJson"></pre>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Catálogo de Produtos. Todos os direitos reservados a Arthur João de Sá.</p>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
