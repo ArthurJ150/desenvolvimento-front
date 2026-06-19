@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-fundo-card: #fff;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #111827;
+    color: var(--cor-fundo-card);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    width: 100%;
+}
+
+.logoArea {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.logoArea img {
+    height: 45px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #e5e5e5;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #374151;
+    color: var(--cor-fundo-card);
+}
+
+nav a img {
+    height: 14px;
+}
+
+.bannerInicio {
+    min-height: 280px;
+    background-image: url('/imagens/testeBanner.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.bannerTexto {
+    width: 100%;
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.8),
+            transparent);
+    color: var(--cor-fundo-card);
+    padding: 25px;
+}
+
+.bannerTexto h2 {
+    font-size: clamp(26px, 5vw, 40px);
+}
+
+.bannerTexto h4 {
+    font-size: clamp(14px, 2vw, 20px);
+}
+
+
+section {
+    display: grid;
+    grid-template-columns: 3fr;
+    gap: 20px;
+    padding: 25px;
+    width: 100%;
+}
+
+.sobre {
+    width: 90%;
+    text-align: left;
+    color: #6c6464;
+    margin: 2%;
+}
+
+.sobre h1 {
+    font-size: clamp(24px, 4vw, 38px);
+}
+
+.sobre p {
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.titulo {
+    margin-top: 1%;
+    margin-bottom: 0.07%;
+    margin-left: 2%;
+    font-size: clamp(24px, 4vw, 38px);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
+    width: 100%;
+}
+
+.card {
+    background: var(--cor-fundo-card);
+    border-radius: 12px;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card img,
+iframe {
+    width: 70%;
+    border: 6px solid black;
+    margin-bottom: 15px;
+}
+
+.cardInfo {
+    background: var(--cor-fundo-card);
+    border-radius: 12px;
+    padding: 18px;
+    width: 90%;
+    text-align: left;
+    margin-left: 5%;
+    display: grid;
+    gap: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.times {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.estatistica {
+    font-size: 22px;
+    font-weight: bold;
+    color: #15803d;
+    margin-bottom: 8px;
+}
+
+.infoCard {
+    font-size: 13px;
+    color: #343030;
+}
+
+.btCard {
+    padding: 8px 14px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 80%;
+    border-radius: 15px;
+    border: 2px solid #374151;
+}
+
+.btCard:hover {
+    background: #374151;
+    color: var(--cor-fundo-card);
+}
+
+footer {
+    background: #111827;
+    color: var(--cor-fundo-card);
+    text-align: center;
+    padding: 25px;
+    margin-top: auto;
+}
+
+footer h1 {
+    margin-bottom: 15px;
+}
+
+footer h6 {
+    margin: 15px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 12px 20px;
+        gap: 10px;
+    }
+
+    .logoArea h1 {
+        font-size: 18px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        padding: 7px 12px;
+    }
+
+    .bannerInicio {
+        min-height: 220px;
+    }
+
+    .bannerTexto {
+        padding: 18px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .estatistica {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logoArea {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .logoArea img {
+        height: 40px;
+    }
+
+    .logoArea h1 {
+        font-size: 17px;
+    }
+
+    .logoArea {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logoArea h1 {
+        font-size: 18px;
+    }
+
+    .bannerTexto h2 {
+        font-size: 24px;
+    }
+
+    .bannerTexto h4 {
+        font-size: 14px;
+    }
+
+    nav a {
+        width: 100%;
+    }
+
+    section {
+        padding: 12px;
+    }
+
+    footer {
+        padding: 18px;
+    }
+
+    footer h5,
+    footer h6 {
+        font-size: 14px;
+    }
+}
