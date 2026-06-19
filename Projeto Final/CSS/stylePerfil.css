@@ -67,7 +67,6 @@ main {
 .perfil-container {
     background: var(--cor-card);
     width: 100%;
-    max-width: 900x;
     margin: auto;
     padding: 25px;
     border-radius: 12px;
